@@ -1,4 +1,5 @@
 package com.example.dependencyinjection.services;
 
-public interface GreetingService {
+public interface ConstructorGreetingService {
+    String sayGreeting();
 }

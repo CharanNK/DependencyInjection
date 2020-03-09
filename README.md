@@ -1,8 +1,8 @@
 # DependencyInjection
 This repository is an example for Dependency Injection in Spring
 
-Markup : ***The repository contains examples of : ***
-Markup : * Spring Context
+***The repository contains examples of : ***
+ * Spring Context
          * Dependency Injection using spring
               * Property injection
               * Constructor injection

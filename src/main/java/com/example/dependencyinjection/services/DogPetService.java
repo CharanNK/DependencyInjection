@@ -1,4 +1,4 @@
-package guru.springframework.sfgdi.services;
+package com.example.dependencyinjection.services;
 
 import org.springframework.context.annotation.Profile;
 

@@ -1,4 +1,11 @@
 package com.example.dependencyinjection.services;
 
-public class SetterInjectedGreetingService {
+import org.springframework.stereotype.Service;
+
+@Service
+public class SetterInjectedGreetingService implements GreetingService {
+    @Override
+    public String sayGreeting() {
+        return "Hello World - setter";
+    }
 }

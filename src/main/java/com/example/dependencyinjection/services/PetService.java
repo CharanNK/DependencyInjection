@@ -1,4 +1,5 @@
-package guru.springframework.sfgdi.services;
+package com.example.dependencyinjection.services;
+
 
 /**
  * Created by jt on 12/28/19.

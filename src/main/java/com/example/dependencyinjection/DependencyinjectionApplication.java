@@ -2,6 +2,7 @@ package com.example.dependencyinjection;
 
 import com.example.dependencyinjection.controllers.*;
 import com.example.dependencyinjection.examplebeans.FakeDataSource;
+import com.example.dependencyinjection.examplebeans.FakeJmsBroker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -25,6 +26,10 @@ public class DependencyinjectionApplication {
 		FakeDataSource fakeDataSource =  (FakeDataSource) context.getBean(FakeDataSource.class);
 
 		System.out.println(fakeDataSource.getUser());
+
+		FakeJmsBroker fakeJmsBroker = (FakeJmsBroker) context.getBean(FakeJmsBroker.class);
+
+		System.out.println(fakeJmsBroker.getUsername());
 
 //		System.out.println("------- Primary bean");
 //

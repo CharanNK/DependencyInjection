@@ -1,0 +1,36 @@
+#this is a comment
+
+name: Charan
+
+names:
+  - Charan
+  - Gaurav
+  - Sumanth
+
+pound_sign: "#"
+
+book:
+  author: Charan
+  publisher: IFB publications
+
+truth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no
+
+string_val: "This is it's quote"
+
+colon_string : "my course:one two three"
+
+include_new_lines: |
+  asaslfs asfljdsal asdfas
+  afsjd
+  asfkasl akdfas adsfa
+
+ignore_new_lines:
+  this is
+  just one long
+  string

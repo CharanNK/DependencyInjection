@@ -1,0 +1,4 @@
+jms:
+  username: JMS Username(YML)
+  password: jmspass
+  url: ymlURL

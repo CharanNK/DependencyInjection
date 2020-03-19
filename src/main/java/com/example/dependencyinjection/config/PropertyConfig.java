@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySources;
 import org.springframework.context.support.PropertySourcesPlaceholderConfigurer;
 import org.springframework.core.env.Environment;
 
-@Configuration
+//@Configuration
 //@PropertySource({"classpath:datasource.properties","classpath:jms.properties"})
 @PropertySources({
         @PropertySource("classpath:datasource.properties"),
@@ -40,7 +40,7 @@ public class PropertyConfig {
     @Value("${jms.url}")
     String jmsurl;
 
-    @Bean
+//    @Bean
     public FakeDataSource fakeDataSource(){
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUser(environment.getProperty("GURU_USERNAMAE"));
@@ -49,7 +49,7 @@ public class PropertyConfig {
         return fakeDataSource;
     }
 
-    @Bean
+//    @Bean
     public FakeJmsBroker fakeJmsBroker(){
         FakeJmsBroker fakeJmsBroker = new FakeJmsBroker();
         fakeJmsBroker.setUsername(jmsUsername);
@@ -58,7 +58,7 @@ public class PropertyConfig {
         return fakeJmsBroker;
     }
 
-    @Bean
+//    @Bean
     public static PropertySourcesPlaceholderConfigurer properties(){
         PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
         return propertySourcesPlaceholderConfigurer;
